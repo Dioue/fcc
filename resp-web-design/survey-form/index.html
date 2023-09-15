@@ -1,0 +1,60 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="nav-bar">
+		<h3>JoeSensei</h3>
+	</div>
+<div class="form-background">
+	<h1 id="title">Survey Form</h1>
+	<p id="description">Thank you for helping us grow!</p>
+	<div class="forms">
+	<form id="survey-form">
+	<label for="name" id="name-label">Name</label>
+	<input type="name" name="name" id="name" class="survey-form" placeholder="Enter your name" required/>
+	<label for="email" id="email-label">Email</label>
+	<input type="email" name="email" placeholder="Enter your email" id="email" class="survey-form" required/>
+	<label for="number" id="number-label">Age<span>(optional)</span></label>
+	<input type="number" name="age" id="number" class="survey-form" placeholder="Enter your age" min="10" max="99"/>
+	<label for="dropdown">Please rate our course</label>
+	<select id="dropdown" name="rate" class="survey-form" required>
+		<option disabled selected value>Please choose rate below here</option>
+		<option value="1-star">Not-likely</option>
+		<option value="2-star">Good</option>
+		<option value="3-star">Great</option>
+	</select>
+	<div class="form-control">
+	<p class="improvement">What should we improve?</p>
+	<label for="viewport">
+	<input type="checkbox" name="form-group" id="viewport" class="checkbox" value="viewport">Viewport
+</label>
+<label for="font-size">
+	<input type="checkbox" name="form-group" id="font-size" class="checkbox" value="font-size">Font Size
+</label>
+<label for="responsiveness">
+	<input type="checkbox" name="form-group" id="responsiveness" class="checkbox" value="responsiveness">Responsiveness
+</label>
+<label for="Nothing-at-all">
+	<input type="checkbox" name="form-group" id="Nothing-at-all" value="Nothing-at-all" checked> Nothing at all
+</label>
+<p class="improvement">Would you like to recommend this course to your friend?</p>
+<label for="no">
+	<input id="no" type="radio" name="form-group" value="no" class="radio">No</label>
+</label>
+<label for="yes">
+	<input type="radio" name="form-group" value="yes" class="radio" id="no" checked>Yes</label>
+	</label>
+</div>
+<div class="form-textare">
+<p class="improvement">Please give us suggestions</p>
+<textarea id="textarea" class="form-textare" placeholder="Please enter suggestion here..." required></textarea>
+  <button type="submit" id="submit" class="submit-button">Submit</button>
+	</div>
+
+		
+</form>
+</div>
+</div>
+</body>

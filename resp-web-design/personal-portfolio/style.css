@@ -1,0 +1,227 @@
+:root {
+    --main-red: #d11433;
+    --main-light-blue: #35beda;
+    --main-black: #353535;
+    --main-dark-blue: #355382;
+    --main-white: #ffffff;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--main-black);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  #navbar {
+    z-index: 2;
+    font-family: "Courier Prime", monospace;
+    background-color: var(--main-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5rem;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 3.55rem;
+    padding: 0.65rem 2.43rem;
+  }
+  
+  #welcome-section {
+    display: flex;
+    justify-content: space-around;
+    color: var(--main-white);
+    margin-top: 5.2rem;
+    height: 100vh;
+    background-color: var(--main-black);
+    width: 100%;
+    font-family: "Secular One", sans-serif;
+  }
+  
+  .h1-welcome {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  
+  #image-div {
+    background: linear-gradient(90deg, var(--main-dark-blue), var(--main-red));
+    margin: 10rem 6rem;
+  }
+  
+  #home {
+    margin-top: 20rem;
+    font-size: 3.35rem;
+    padding: 1rem;
+    cursor: context-menu;
+    background: linear-gradient(90deg, var(--main-red), var(--main-dark-blue));
+    margin-bottom: 30rem;
+  }
+  
+  a:hover {
+    color: var(--main-light-blue);
+  }
+  
+  .colorful:hover {
+    transition: 0.35s;
+    font-size: 3rem;
+    color: var(--main-black);
+  }
+  
+  #about {
+    margin-top: 6rem;
+    box-sizing: border-box;
+    padding: rem;
+    width: 100%;
+    position: relative;
+  }
+  
+  #about::before {
+    z-index: 0;
+    content: "";
+    display: block;
+    margin-bottom: 6rem;
+    width: 100%;
+    border-bottom: 5px solid var(--main-red);
+  }
+  
+  .skills {
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    cursor: context-menu;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-white);
+  }
+  
+  .skilllist {
+    margin: 1.5rem;
+    color: var(--main-light-blue);
+  }
+  
+  i {
+    font-size: 5rem;
+    padding: 2rem;
+  }
+  
+  .project-tile {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .project-heading {
+    color: var(--main-red);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+  
+  .project-image {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .project-title {
+    padding: 0.65rem;
+    font-size: 2rem;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 0.65rem;
+  }
+  
+  .project-title:hover {
+    font-size: 1.35rem;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  
+  #project-title1 {
+    background: linear-gradient(90deg, var(--main-red), var(--main-dark-blue));
+  }
+  
+  #project-title2 {
+    background: var(--main-dark-blue);
+  }
+  
+  #project-title3 {
+    background: linear-gradient(270deg, var(--main-red), var(--main-dark-blue));
+  }
+  
+  #contact {
+    width: 100%;
+    color: var(--main-red);
+    background-color: #101010;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+  }
+  
+  .contact-div i {
+    align-self: center;
+    font-size: 3.35rem;
+  }
+  
+  .copyrights {
+    align-self: center;
+    font-size: 1.15rem;
+    pointer-events: none;
+  }
+  
+  .contact-a {
+    color: var(--main-red);
+  }
+  
+  .contact-a:hover {
+    color: #101010;
+  }
+  
+  @media (min-width: 2000px) {
+    #contact {
+      height: 120rem;
+    }
+  
+    .copyrights {
+      font-size: 5rem;
+      margin-top: 2rem;
+      align-self: flex-start;
+    }
+  
+    .contact-div i {
+      font-size: 10rem;
+    }
+  }

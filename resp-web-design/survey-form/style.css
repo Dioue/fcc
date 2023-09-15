@@ -1,0 +1,105 @@
+body{
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	background: #3bc470;
+	margin-top: 5rem;
+}
+
+
+.nav-bar{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #25da7e;
+	z-index: 2;
+}
+
+.nav-bar h3{
+	color: #fff;
+	text-align: center;
+}
+
+
+.form-background{
+	margin-left: 12rem;
+	margin-right: 12rem;
+	text-align: center;
+	}
+
+.form-background h2{
+	color: #fff;
+	font-size: 2.25rem;
+}
+
+#description{
+	color: #fff;
+	font-size: 1rem;
+	margin-bottom: 2.25rem;
+}
+
+.forms{
+	padding-top: .5rem;
+background: #eee;
+text-align: left;
+padding-left: 2rem;
+font-size: 1.25rem;
+margin-left: 3rem;
+margin-right: 3rem;
+border-radius: 1rem;
+opacity: 92%;
+}
+
+.survey-form, label, select{
+	display: flex;
+	width: 90%;
+	margin: 0 .6rem auto;
+	padding: .5rem;
+	border-radius: .2rem;
+	border-color: #fff;
+}
+
+label{
+	font-size: 1.1rem;
+}
+
+span{
+	font-size: 1rem;
+}
+
+#number{
+	width: 15%;
+}
+
+.form-control label{
+	font-size: 1rem;
+}
+.checkbox{
+	text-align: left;
+	display: inline-block;
+}
+
+
+.radio{
+	text-align: left;
+	display: inline-block;
+}
+
+textarea{
+	resize: vertical;
+	min-height: 120px;
+	width: 90%;
+	padding: 0.625rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+button{
+	background: #25da7e;
+	width: 93.25%;
+	padding: .525rem;
+	text-align: center;
+	border-radius: .625rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
