@@ -45,7 +45,7 @@ query_customer
 if [[ -z "$QUERY_PHONE" ]]; then
     echo -e "\nI don't have a record for that phone number, what's your name?"
     read CUSTOMER_NAME
-    psql --username="$username" --dbname="$dbname" -c "INSERT INTO customers (name, phone) VALUES ('$CUSTOMER_NAME', '$CUSTOMER_PHONE')" >/dev/null 2>&1
+    psql --username="$username" --dbname="$dbname" -c -q "INSERT INTO customers (name, phone) VALUES ('$CUSTOMER_NAME', '$CUSTOMER_PHONE')"
 fi
 
 query_customer
@@ -62,7 +62,7 @@ pattern='^([0-1][0-9]|2[0-3]):[0-5][0-9]$'
 
 # Insert the provided credentials to the appointments table
 SERVICE_ID=$SERVICE_ID_SELECTED
-psql --username="$username" --dbname="$dbname" -c "INSERT INTO appointments (customer_id, service_id, time) VALUES ('$CUSTOMER_ID', '$SERVICE_ID', '$SERVICE_TIME')" >/dev/null 2>&1
+psql --username="$username" --dbname="$dbname" -c -q "INSERT INTO appointments (customer_id, service_id, time) VALUES ('$CUSTOMER_ID', '$SERVICE_ID', '$SERVICE_TIME')"
 
 SERVICE_NAME=$(echo "$QUERY_SERVICES" | grep "^$SERVICE_ID_SELECTED," | cut -d ',' -f 2)
 
